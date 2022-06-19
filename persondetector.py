@@ -9,13 +9,13 @@ import PySimpleGUI as sg
 from plyer import notification
 from threading import Thread
 
-IN = 1
+visuals = True  # This will toggle the visiblity of the camera feed
 
-visuals = True
+IN = 1  # This will toggle the webcam source (0 = normal webcam, 1 = smartphone DroidCam webcam)
 
-target = 'person'
+target = 'person'  # This changes what you are detecting, examples are 'cat', 'dog', or 'person' by default 
 
-modelFile = "yolov5s.pt" # This is the AI model the program will use
+modelFile = "yolov5s.pt"  # This is the AI model file, do not change this unless you really know what you are doing!
 
 ### -------------------------------------- function to run detection ---------------------------------------------------------
 def detectx (frame, model):
