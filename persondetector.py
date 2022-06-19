@@ -3,12 +3,9 @@ from json.encoder import INFINITY
 from socket import timeout
 import torch
 import cv2
-import time
 import numpy as np
-import win32gui, win32con
 from math import sqrt
 import PySimpleGUI as sg
-from playsound import playsound
 from plyer import notification
 from threading import Thread
 
