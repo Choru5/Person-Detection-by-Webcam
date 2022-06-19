@@ -13,6 +13,8 @@ IN = 1
 
 visuals = True
 
+target = 'person'
+
 modelFile = "yolov5s.pt" # This is the AI model the program will use
 
 ### -------------------------------------- function to run detection ---------------------------------------------------------
@@ -49,7 +51,7 @@ def plot_boxes(results, frame, classes):
         x1, y1, x2, y2 = int(row[0]*x_shape), int(row[1]*y_shape), int(row[2]*x_shape), int(row[3]*y_shape) ## BBOx coordniates
         text = classes[int(labels[i])]
         
-        if text == 'person':
+        if text == target:
             # Draw bbox for this detection    
             cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2) ## BBox  
             cv2.rectangle(frame, (x1, y1 - 20), (x2, y1), (0, 255, 0), -1) ## Text BG
