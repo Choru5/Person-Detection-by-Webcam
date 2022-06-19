@@ -4,7 +4,7 @@ Requirements:
  - A Nvidia GPU
  
  What it is:
- -  This is a machine learning model that has been trained to detect people and will then notify you.
+ -  This is a machine learning model that has been trained to detect people / pets and notify you.
  
  Installation Instructions:
  
