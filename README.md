@@ -24,6 +24,8 @@ Requirements:
  
  IN = 1  # This will toggle the webcam source (0 = normal webcam, 1 = DroidCam webcam)
  
+ target = 'person'  # This changes what you are detecting, examples are 'cat', 'dog', or, by default 'person'
+ 
  modelFile = "yolov5s.pt"  # This is the AI model file, do not change this unless you really know what you are doing!
 ```
 
