@@ -96,7 +96,8 @@ def main(IN=None):
 
             if persons >= 1:
                 if canNotify == True:
-                    notifyMe("Warning", "Person detected")
+                    detectionString = target + " detected"
+                    notifyMe("Warning", detectionString)
                     canNotify = False
 
             elif persons <= 0:
