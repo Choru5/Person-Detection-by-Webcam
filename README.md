@@ -1,4 +1,4 @@
-# Person-Detection-by-Webcam
+# Person/Pet-Detection-by-Webcam
 
 Requirements:
  - A Nvidia GPU
