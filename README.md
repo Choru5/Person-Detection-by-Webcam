@@ -1,7 +1,8 @@
 # Person/Pet-Detection-by-Webcam
 
 Requirements:
- - A Nvidia GPU
+ - A PC with a Nvidia GPU
+ - A smartphone / webcam
  
  What it is:
  -  This is a machine learning model that has been trained to detect people / pets and notify you.
