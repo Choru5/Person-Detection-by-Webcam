@@ -12,13 +12,11 @@ from playsound import playsound
 from plyer import notification
 from threading import Thread
 
-detection_threshold = 0.65 # Cutoff enemy certainty percentage for aiming
-
-windowTitle = "vid"
-
 IN = 1
 
-modelFile = "yolov5s.pt" # This is the AI model the program will use, multiple are included, (W) = working, (NW) = not working.
+visuals = True
+
+modelFile = "yolov5s.pt" # This is the AI model the program will use
 
 ### -------------------------------------- function to run detection ---------------------------------------------------------
 def detectx (frame, model):
@@ -93,7 +91,9 @@ def main(IN=None):
         if ret:
             results = detectx(img, model = model)
             currframe, persons = plot_boxes(results, img, classes = classes) 
-            cv2.imshow("vid", currframe)
+
+            if visuals == True:
+                cv2.imshow("vid", currframe)
 
             if persons >= 1:
                 if canNotify == True:
@@ -113,5 +113,7 @@ def main(IN=None):
 ### -------------------  calling the main function-------------------------------
 
 main(IN)
+
+
 
 
