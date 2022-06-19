@@ -22,7 +22,9 @@ Requirements:
  ```
  visuals = True  # This will toggle the visiblity of the camera feed
  
- IN = 1 # This will toggle the webcam source (0 = normal webcam, 1 = DroidCam webcam)
+ IN = 1  # This will toggle the webcam source (0 = normal webcam, 1 = DroidCam webcam)
+ 
+ modelFile = "yolov5s.pt"  # This is the AI model file, do not change this unless you really know what you are doing!
 ```
 
  How to use:
