@@ -17,7 +17,7 @@ Requirements:
  - Create a virtual environment using this command ``` conda create -n pytorch-gpu python==3.8 ```
  - Activate the virtual env using ``` conda activate pytorch-gpu ```
  - Install required packages by running ``` pip install -r requirements.txt ```
- - Download DroidCam Client on your PC and the DroidCam app on your phone
+ - Download DroidCam Client on your PC and the DroidCam app on your phone (if using a webcam ignore this)
 
  Customizable Settings:
  ```
@@ -34,4 +34,4 @@ Requirements:
  
  - Open anaconda as administrator and cd to the directory of the persondetector.py script in this repository.
  - Run the command ``` conda activate pytorch-gpu ``` to start up the virtual environment
- - Run the command ``` python pythondetector.py ``` to start the program, make sure you have DroidCam Client open and are connected to your phones DroidCam via Wi-Fi or USB
+ - Run the command ``` python pythondetector.py ``` to start the program, make sure you have DroidCam Client open and are connected to your phones DroidCam via Wi-Fi or USB (if using a webcam ignore this)
