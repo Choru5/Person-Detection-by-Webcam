@@ -23,7 +23,7 @@ Requirements:
  ```
  visuals = True  # This will toggle the visiblity of the camera feed
  
- IN = 1  # This will toggle the webcam source (0 = normal webcam, 1 = DroidCam webcam)
+ IN = 1  # This will toggle the webcam source (0 = normal webcam, 1 = smartphone DroidCam webcam)
  
  target = 'person'  # This changes what you are detecting, examples are 'cat', 'dog', or 'person' by default 
  
